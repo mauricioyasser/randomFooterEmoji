@@ -1,0 +1,100 @@
+:root {
+    --color-dark: #14121D;
+    --color-inputText: #999999;
+    --color-border: #EDEDED;
+    --color-white: #FEFEFE;
+    --color-bodyColor: #FDFDFD;
+    --color-blue: blue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-dark);
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+body {
+    background-color: var(--color-bodyColor);
+}
+
+.container {
+    margin: auto;
+    max-width: 700px;
+}
+
+.moduleArea {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* <<< Modules >>> */
+.module {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-white);
+}
+
+/* <<< Module Items >>> */
+.moduleTitle {
+    margin-bottom: 5px;
+    font-size: 1.4em;
+}
+
+.moduleTitle::before {
+    margin-right: 5px;
+    content: "|";
+    color: var(--color-blue);
+}
+
+.moduleRowArea {
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* <<< Buttons >>> */
+.primaryButton {
+    margin: 10px 0 0 0;
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px;
+    font-weight: bold;
+    border: none;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+button:hover {
+    cursor: pointer;
+    filter: brightness(115%);
+}
+
+button:active {
+    filter: brightness(90%);
+}
+
+/* <<< Footer >>> */
+.footerContent {
+    margin: 20px 0;
+    text-align: center;
+    color: var(--color-inputText);
+}
+
+.footerContent:hover {
+    cursor: default;
+}
+
+.footerEmoji {
+    display: inline-block;
+    position: relative;
+}
