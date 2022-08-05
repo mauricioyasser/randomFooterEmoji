@@ -85,8 +85,9 @@ button:active {
 
 /* <<< Footer >>> */
 .footerContent {
-    margin: 20px 0;
+    margin: 10px 0;
     text-align: center;
+    font-size: 0.9em;
     color: var(--color-inputText);
 }
 
@@ -97,4 +98,27 @@ button:active {
 .footerEmoji {
     display: inline-block;
     position: relative;
+}
+
+.footerEmoji:hover #tooltipText {
+    visibility: visible;
+}
+
+#tooltipText {
+    position: absolute;
+    visibility: hidden;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 5px 5px 5px 0;
+    font-size: 0.9em;
+    opacity: 0.8;
+    width: max-content;
+    bottom: 100%;
+    left: 90%;
+}
+
+#tooltipText:hover {
+    visibility: visible;
 }
